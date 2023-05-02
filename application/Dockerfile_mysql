@@ -1,0 +1,5 @@
+FROM mysql:8.0
+
+COPY ./dbCreate.sql /tmp
+
+CMD [ "mysqld", "--init-file=/tmp/dbCreate.sql" ]

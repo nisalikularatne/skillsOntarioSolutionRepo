@@ -1,0 +1,258 @@
+root - DEBUG - Application log
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 127-639-116
+botocore.hooks - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+botocore.hooks - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+botocore.hooks - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+botocore.hooks - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+botocore.hooks - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+botocore.hooks - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+botocore.hooks - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+botocore.hooks - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+botocore.hooks - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+botocore.hooks - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+botocore.hooks - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+botocore.utils - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+botocore.credentials - DEBUG - Looking for credentials via: env
+botocore.credentials - INFO - Found credentials in environment variables.
+botocore.loaders - DEBUG - Loading JSON file: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/botocore/data/endpoints.json
+botocore.loaders - DEBUG - Loading JSON file: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/botocore/data/sdk-default-configuration.json
+botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fbd486ac700>
+botocore.loaders - DEBUG - Loading JSON file: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/botocore/data/ssm/2014-11-06/service-2.json
+botocore.loaders - DEBUG - Loading JSON file: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/botocore/data/ssm/2014-11-06/endpoint-rule-set-1.json.gz
+botocore.loaders - DEBUG - Loading JSON file: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/botocore/data/partitions.json
+botocore.hooks - DEBUG - Event creating-client-class.ssm: calling handler <function add_generate_presigned_url at 0x7fbd48625670>
+botocore.endpoint - DEBUG - Setting ssm timeout as (60, 60)
+botocore.loaders - DEBUG - Loading JSON file: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/botocore/data/_retry.json
+botocore.client - DEBUG - Registering retry handlers for service: ssm
+botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+botocore.regions - DEBUG - Endpoint provider result: https://ssm.us-east-1.amazonaws.com
+botocore.hooks - DEBUG - Event before-parameter-build.ssm.GetParameter: calling handler <function generate_idempotent_uuid at 0x7fbd486c2e50>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function add_recursion_detection_header at 0x7fbd486c2af0>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function inject_api_version_header_if_needed at 0x7fbd486c9700>
+botocore.endpoint - DEBUG - Making request for OperationModel(name=GetParameter) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AmazonSSM.GetParameter', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107'}, 'body': b'{"Name": "username", "WithDecryption": false}', 'url': 'https://ssm.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fbd586d6850>, 'has_streaming_input': False, 'auth_type': None}}
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fbd586d6730>>
+botocore.hooks - DEBUG - Event choose-signer.ssm.GetParameter: calling handler <function set_operation_specific_signer at 0x7fbd486c2d30>
+botocore.auth - DEBUG - Calculating signature using v4 auth.
+botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:ssm.us-east-1.amazonaws.com
+x-amz-date:20230502T160954Z
+x-amz-security-token:IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx
+x-amz-target:AmazonSSM.GetParameter
+
+content-type;host;x-amz-date;x-amz-security-token;x-amz-target
+2911e5919bcdc5d5d58cfe8a05f6436e04e1fcb84ba3888431812d60b75d5402
+botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20230502T160954Z
+20230502/us-east-1/ssm/aws4_request
+7c8644207ab6fc8b789b058a8fe671d882691d4b7ea59851eabc466bbdb8ccef
+botocore.auth - DEBUG - Signature:
+51fe1593ca9c3a9775b869dea0e9ceacedfa078c2fde18ff827444c46efb5ddd
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <function add_retry_headers at 0x7fbd486c9dc0>
+botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ssm.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AmazonSSM.GetParameter', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107', 'X-Amz-Date': b'20230502T160954Z', 'X-Amz-Security-Token': b'IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx', 'Authorization': b'AWS4-HMAC-SHA256 Credential=ASIAY6HURHHRVKRE5N4V/20230502/us-east-1/ssm/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token;x-amz-target, Signature=51fe1593ca9c3a9775b869dea0e9ceacedfa078c2fde18ff827444c46efb5ddd', 'amz-sdk-invocation-id': b'ff13a0b4-d9c6-46a4-9861-c6a9c437840b', 'amz-sdk-request': b'attempt=1', 'Content-Length': '45'}>
+botocore.httpsession - DEBUG - Certificate path: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/certifi/cacert.pem
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ssm.us-east-1.amazonaws.com:443
+urllib3.connectionpool - DEBUG - https://ssm.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 192
+botocore.parsers - DEBUG - Response headers: {'Server': 'Server', 'Date': 'Tue, 02 May 2023 16:09:54 GMT', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '192', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'b8e7bb9d-69a0-4b09-928f-1e717e19a28c'}
+botocore.parsers - DEBUG - Response body:
+b'{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:614693157347:parameter/username","DataType":"text","LastModifiedDate":1.683033350515E9,"Name":"username","Type":"String","Value":"user","Version":1}}'
+botocore.hooks - DEBUG - Event needs-retry.ssm.GetParameter: calling handler <botocore.retryhandler.RetryHandler object at 0x7fbd586fbe50>
+botocore.retryhandler - DEBUG - No retry needed.
+botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+botocore.regions - DEBUG - Endpoint provider result: https://ssm.us-east-1.amazonaws.com
+botocore.hooks - DEBUG - Event before-parameter-build.ssm.GetParameter: calling handler <function generate_idempotent_uuid at 0x7fbd486c2e50>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function add_recursion_detection_header at 0x7fbd486c2af0>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function inject_api_version_header_if_needed at 0x7fbd486c9700>
+botocore.endpoint - DEBUG - Making request for OperationModel(name=GetParameter) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AmazonSSM.GetParameter', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107'}, 'body': b'{"Name": "password", "WithDecryption": false}', 'url': 'https://ssm.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fbd586d6850>, 'has_streaming_input': False, 'auth_type': None}}
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fbd586d6730>>
+botocore.hooks - DEBUG - Event choose-signer.ssm.GetParameter: calling handler <function set_operation_specific_signer at 0x7fbd486c2d30>
+botocore.auth - DEBUG - Calculating signature using v4 auth.
+botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:ssm.us-east-1.amazonaws.com
+x-amz-date:20230502T160954Z
+x-amz-security-token:IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx
+x-amz-target:AmazonSSM.GetParameter
+
+content-type;host;x-amz-date;x-amz-security-token;x-amz-target
+d0cc0d421091277bbe3744c29588df9c3e346ea43f65a4e1b378b54fb48e6acc
+botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20230502T160954Z
+20230502/us-east-1/ssm/aws4_request
+aa600b77982ddffb162674b5330dca02c19879576259d3362a43189b82cda092
+botocore.auth - DEBUG - Signature:
+34d571f2a00fee65af48b7edb127d9cdcc87ea3086c196bee71b509d1300fa27
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <function add_retry_headers at 0x7fbd486c9dc0>
+botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ssm.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AmazonSSM.GetParameter', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107', 'X-Amz-Date': b'20230502T160954Z', 'X-Amz-Security-Token': b'IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx', 'Authorization': b'AWS4-HMAC-SHA256 Credential=ASIAY6HURHHRVKRE5N4V/20230502/us-east-1/ssm/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token;x-amz-target, Signature=34d571f2a00fee65af48b7edb127d9cdcc87ea3086c196bee71b509d1300fa27', 'amz-sdk-invocation-id': b'9c8f2e9f-deea-40c3-96db-f6177682d4d7', 'amz-sdk-request': b'attempt=1', 'Content-Length': '45'}>
+botocore.httpsession - DEBUG - Certificate path: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/certifi/cacert.pem
+urllib3.connectionpool - DEBUG - https://ssm.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 204
+botocore.parsers - DEBUG - Response headers: {'Server': 'Server', 'Date': 'Tue, 02 May 2023 16:09:55 GMT', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '204', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'c949809d-80af-47c7-b091-64ef792b7c77'}
+botocore.parsers - DEBUG - Response body:
+b'{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:614693157347:parameter/password","DataType":"text","LastModifiedDate":1.683033350513E9,"Name":"password","Type":"String","Value":"K2-_qVx^00%q#ZyM","Version":1}}'
+botocore.hooks - DEBUG - Event needs-retry.ssm.GetParameter: calling handler <botocore.retryhandler.RetryHandler object at 0x7fbd586fbe50>
+botocore.retryhandler - DEBUG - No retry needed.
+botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+botocore.regions - DEBUG - Endpoint provider result: https://ssm.us-east-1.amazonaws.com
+botocore.hooks - DEBUG - Event before-parameter-build.ssm.GetParameter: calling handler <function generate_idempotent_uuid at 0x7fbd486c2e50>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function add_recursion_detection_header at 0x7fbd486c2af0>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function inject_api_version_header_if_needed at 0x7fbd486c9700>
+botocore.endpoint - DEBUG - Making request for OperationModel(name=GetParameter) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AmazonSSM.GetParameter', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107'}, 'body': b'{"Name": "host", "WithDecryption": false}', 'url': 'https://ssm.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fbd586d6850>, 'has_streaming_input': False, 'auth_type': None}}
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fbd586d6730>>
+botocore.hooks - DEBUG - Event choose-signer.ssm.GetParameter: calling handler <function set_operation_specific_signer at 0x7fbd486c2d30>
+botocore.auth - DEBUG - Calculating signature using v4 auth.
+botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:ssm.us-east-1.amazonaws.com
+x-amz-date:20230502T160955Z
+x-amz-security-token:IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx
+x-amz-target:AmazonSSM.GetParameter
+
+content-type;host;x-amz-date;x-amz-security-token;x-amz-target
+6144458a83242f5715c1a3dd4f5ab3c49c197bfb449a2515582659b3e53366b0
+botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20230502T160955Z
+20230502/us-east-1/ssm/aws4_request
+574c7fe960bee473ef7d2c8555144664d73d39c361127345fd897bc66e944a57
+botocore.auth - DEBUG - Signature:
+88c98e03bb3245c391284b785ba2fcc310721f710eeb675ed20acfa80a0c4290
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <function add_retry_headers at 0x7fbd486c9dc0>
+botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ssm.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AmazonSSM.GetParameter', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107', 'X-Amz-Date': b'20230502T160955Z', 'X-Amz-Security-Token': b'IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx', 'Authorization': b'AWS4-HMAC-SHA256 Credential=ASIAY6HURHHRVKRE5N4V/20230502/us-east-1/ssm/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token;x-amz-target, Signature=88c98e03bb3245c391284b785ba2fcc310721f710eeb675ed20acfa80a0c4290', 'amz-sdk-invocation-id': b'bbabcb15-6103-46ac-a26e-000337cf1f39', 'amz-sdk-request': b'attempt=1', 'Content-Length': '41'}>
+botocore.httpsession - DEBUG - Certificate path: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/certifi/cacert.pem
+urllib3.connectionpool - DEBUG - https://ssm.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 237
+botocore.parsers - DEBUG - Response headers: {'Server': 'Server', 'Date': 'Tue, 02 May 2023 16:09:55 GMT', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '237', 'Connection': 'keep-alive', 'x-amzn-RequestId': '6a6ef94c-d55f-447a-83e6-7cfc0c3809f4'}
+botocore.parsers - DEBUG - Response body:
+b'{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:614693157347:parameter/host","DataType":"text","LastModifiedDate":1.683033770216E9,"Name":"host","Type":"String","Value":"this-db-instance.cyc0uxkai50v.us-east-1.rds.amazonaws.com","Version":1}}'
+botocore.hooks - DEBUG - Event needs-retry.ssm.GetParameter: calling handler <botocore.retryhandler.RetryHandler object at 0x7fbd586fbe50>
+botocore.retryhandler - DEBUG - No retry needed.
+botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+botocore.regions - DEBUG - Endpoint provider result: https://ssm.us-east-1.amazonaws.com
+botocore.hooks - DEBUG - Event before-parameter-build.ssm.GetParameter: calling handler <function generate_idempotent_uuid at 0x7fbd486c2e50>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function add_recursion_detection_header at 0x7fbd486c2af0>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function inject_api_version_header_if_needed at 0x7fbd486c9700>
+botocore.endpoint - DEBUG - Making request for OperationModel(name=GetParameter) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AmazonSSM.GetParameter', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107'}, 'body': b'{"Name": "port", "WithDecryption": false}', 'url': 'https://ssm.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fbd586d6850>, 'has_streaming_input': False, 'auth_type': None}}
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fbd586d6730>>
+botocore.hooks - DEBUG - Event choose-signer.ssm.GetParameter: calling handler <function set_operation_specific_signer at 0x7fbd486c2d30>
+botocore.auth - DEBUG - Calculating signature using v4 auth.
+botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:ssm.us-east-1.amazonaws.com
+x-amz-date:20230502T160955Z
+x-amz-security-token:IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx
+x-amz-target:AmazonSSM.GetParameter
+
+content-type;host;x-amz-date;x-amz-security-token;x-amz-target
+9ff4ead7161d9a84d0676ffc851aa0c3a6faf9e1f1e3730968d38b25bea8fe45
+botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20230502T160955Z
+20230502/us-east-1/ssm/aws4_request
+3d4701892817bb13061c22da96b7cd5667b52f99277f85091f5c839ef726d33b
+botocore.auth - DEBUG - Signature:
+684b1fa32b7ce9f57b58d405ead9546717450e54f677e1efb08084c87f2bd019
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <function add_retry_headers at 0x7fbd486c9dc0>
+botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ssm.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AmazonSSM.GetParameter', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107', 'X-Amz-Date': b'20230502T160955Z', 'X-Amz-Security-Token': b'IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx', 'Authorization': b'AWS4-HMAC-SHA256 Credential=ASIAY6HURHHRVKRE5N4V/20230502/us-east-1/ssm/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token;x-amz-target, Signature=684b1fa32b7ce9f57b58d405ead9546717450e54f677e1efb08084c87f2bd019', 'amz-sdk-invocation-id': b'8a531469-3040-466e-882d-b0f2d187008f', 'amz-sdk-request': b'attempt=1', 'Content-Length': '41'}>
+botocore.httpsession - DEBUG - Certificate path: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/certifi/cacert.pem
+urllib3.connectionpool - DEBUG - https://ssm.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 184
+botocore.parsers - DEBUG - Response headers: {'Server': 'Server', 'Date': 'Tue, 02 May 2023 16:09:55 GMT', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '184', 'Connection': 'keep-alive', 'x-amzn-RequestId': '52ba7d57-ddb5-42b8-8acf-454b2e9aa5c9'}
+botocore.parsers - DEBUG - Response body:
+b'{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:614693157347:parameter/port","DataType":"text","LastModifiedDate":1.683033350519E9,"Name":"port","Type":"String","Value":"3306","Version":1}}'
+botocore.hooks - DEBUG - Event needs-retry.ssm.GetParameter: calling handler <botocore.retryhandler.RetryHandler object at 0x7fbd586fbe50>
+botocore.retryhandler - DEBUG - No retry needed.
+botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+botocore.regions - DEBUG - Endpoint provider result: https://ssm.us-east-1.amazonaws.com
+botocore.hooks - DEBUG - Event before-parameter-build.ssm.GetParameter: calling handler <function generate_idempotent_uuid at 0x7fbd486c2e50>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function add_recursion_detection_header at 0x7fbd486c2af0>
+botocore.hooks - DEBUG - Event before-call.ssm.GetParameter: calling handler <function inject_api_version_header_if_needed at 0x7fbd486c9700>
+botocore.endpoint - DEBUG - Making request for OperationModel(name=GetParameter) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AmazonSSM.GetParameter', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107'}, 'body': b'{"Name": "database", "WithDecryption": false}', 'url': 'https://ssm.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fbd586d6850>, 'has_streaming_input': False, 'auth_type': None}}
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fbd586d6730>>
+botocore.hooks - DEBUG - Event choose-signer.ssm.GetParameter: calling handler <function set_operation_specific_signer at 0x7fbd486c2d30>
+botocore.auth - DEBUG - Calculating signature using v4 auth.
+botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:ssm.us-east-1.amazonaws.com
+x-amz-date:20230502T160955Z
+x-amz-security-token:IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx
+x-amz-target:AmazonSSM.GetParameter
+
+content-type;host;x-amz-date;x-amz-security-token;x-amz-target
+d5213738126d766df217ffa61f8a019782cd8bfbb4248cc2de05f5cf1239e9f5
+botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20230502T160955Z
+20230502/us-east-1/ssm/aws4_request
+f446104dcccd3dad8c14f1fd45789392e04f6560ccce648895ce117dc0b62569
+botocore.auth - DEBUG - Signature:
+a8eaea114d1b582a1e1c720a62c9181f91a67dd2aa54aa531670a60ff62cbb5f
+botocore.hooks - DEBUG - Event request-created.ssm.GetParameter: calling handler <function add_retry_headers at 0x7fbd486c9dc0>
+botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ssm.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AmazonSSM.GetParameter', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.26.107 Python/3.9.7 Darwin/21.5.0 Botocore/1.29.107', 'X-Amz-Date': b'20230502T160955Z', 'X-Amz-Security-Token': b'IQoJb3JpZ2luX2VjELX//////////wEaCXVzLWVhc3QtMSJHMEUCIGCaXD0FpAyMO8e7P0k8WtrmVncR7WZ44dOe/6pnyd+GAiEA0QIyamiZzpuggmipsHxS4GLOHHHdkW1v3M9LWNqpBZUqoAIIvf//////////ARABGgw2MTQ2OTMxNTczNDciDDx1tjh14SmLx40Zryr0AXDx3pyYwyKg3ja8/D5VTS7RNjkJqCIB8bh2eBVzWhG0afXe75ofl/stNP83AGrYpoFNdWImtJt8mdNn8LNFkcDH5A9RQ0zvoo+gJMobQWSdZ7s+RRe/0feDr0g8YD7LvK5rUcckqnyDfyga97dPzgTCb9pfpcU0FJi6Bf5696KqSMLQiORzk3zsya5IEU9gFTveV4sqNnQ09Hbh7niimCScfkur2FVuBJM+dTZuWwHV7s5mXQecJ5gnMVpqw5t049MgREK6wghbemXHob31S/IJj6wkfR1oODq3axkUMnQvLfLt/Sj0T24hLXEPzZdw0rcZS8sw0/vDogY6nQHadwqVKlw51drgHvX3ErV+rcPxghVyNFcpJ9FkWxG1+NdRWK/5VSJtdpjAX5TR4DzDgH/8S/wBYKBkZzfVyiiqefKzfpYdHN5DHdntNpb5hH8Q6nw5a4WR5qKsBIwX1dlGhRTWq1xis2uoqVWgHLcbCYTyn8OxWKADQjZ43i/++aXZeGiMh9PYI5gleFGaGPq0XwtT5nYvZvwD4jFx', 'Authorization': b'AWS4-HMAC-SHA256 Credential=ASIAY6HURHHRVKRE5N4V/20230502/us-east-1/ssm/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token;x-amz-target, Signature=a8eaea114d1b582a1e1c720a62c9181f91a67dd2aa54aa531670a60ff62cbb5f', 'amz-sdk-invocation-id': b'c5045010-6d32-4206-ae25-4ab75b4b241e', 'amz-sdk-request': b'attempt=1', 'Content-Length': '45'}>
+botocore.httpsession - DEBUG - Certificate path: /Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/certifi/cacert.pem
+urllib3.connectionpool - DEBUG - https://ssm.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 201
+botocore.parsers - DEBUG - Response headers: {'Server': 'Server', 'Date': 'Tue, 02 May 2023 16:09:55 GMT', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '201', 'Connection': 'keep-alive', 'x-amzn-RequestId': '4ea8cd6b-0e8a-430d-a74c-00d3920a0863'}
+botocore.parsers - DEBUG - Response body:
+b'{"Parameter":{"ARN":"arn:aws:ssm:us-east-1:614693157347:parameter/database","DataType":"text","LastModifiedDate":1.683033350539E9,"Name":"database","Type":"String","Value":"skillsontario","Version":1}}'
+botocore.hooks - DEBUG - Event needs-retry.ssm.GetParameter: calling handler <botocore.retryhandler.RetryHandler object at 0x7fbd586fbe50>
+botocore.retryhandler - DEBUG - No retry needed.
+root - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "/Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/pymysql/connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "/Users/nisalikularatne/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/Users/nisalikularatne/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nisalikularatne/WebStormProjects/SkillsOntarioEnhancedSolution/application/app.py", line 24, in main
+    conn = dbconn()
+  File "/Users/nisalikularatne/WebStormProjects/SkillsOntarioEnhancedSolution/application/app.py", line 143, in dbconn
+    cnx = connections.Connection(**params)
+  File "/Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/nisalikularatne/opt/anaconda3/lib/python3.9/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '172.17.0.2' (timed out)")
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:05] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:16] "GET /signin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:16] "GET /static/signup.css HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:17] "GET /signup HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:18] "[36mGET /static/signup.css HTTP/1.1[0m" 304 -
+root - ERROR - DB connection failed
+NoneType: None
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:34] "POST /api/signup HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:36] "GET /signin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:36] "[36mGET /static/signup.css HTTP/1.1[0m" 304 -
+root - ERROR - DB connection failed
+NoneType: None
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:43] "POST /api/validateLogin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:54] "GET /signin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:54] "[36mGET /static/signup.css HTTP/1.1[0m" 304 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:56] "GET /signup HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:10:56] "[36mGET /static/signup.css HTTP/1.1[0m" 304 -
+root - ERROR - DB connection failed
+NoneType: None
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:11:09] "POST /api/signup HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:11:13] "GET /signin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/May/2023 12:11:13] "[36mGET /static/signup.css HTTP/1.1[0m" 304 -
