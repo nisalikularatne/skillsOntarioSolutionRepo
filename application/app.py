@@ -72,7 +72,8 @@ def validateLogin():
 def signUp():
     global conn 
 
-    if(conn is None):   
+    if(conn is None):
+        print('error connection while signing up')
         logging.error("DB connection failed", exc_info=True)
         return render_template('error.html', message="DB connection failed") 
     _name = request.form['inputName']
