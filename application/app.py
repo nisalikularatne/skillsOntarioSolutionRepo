@@ -6,7 +6,6 @@ import logging
 import os
 # logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 # logging.debug('Application log')
-
 DBHOST = os.environ.get("DBHOST") or "localhost"
 DBUSER = os.environ.get("DBUSER") or "user"
 DBPWD = os.environ.get("DBPWD") or "password"
