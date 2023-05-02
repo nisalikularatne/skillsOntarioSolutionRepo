@@ -12,6 +12,7 @@ resource "aws_lb" "this" {
     Environment = var.stage
   }
 }
+
 # ALB is deployed
 resource "aws_alb_target_group" "blue" {
   name        = "${var.name}-tg-${var.stage}"
