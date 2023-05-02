@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.77.2
+    hooks:
+      # Terraform validation
+      - id: terraform_fmt
+      - id: terraform_validate
+      # - id: terraform_tfsec
+      - id: terraform_tflint
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+
+      # Security
+      - id: detect-aws-credentials
+        args: ['--allow-missing-credentials']
+      - id: detect-private-key
+  - repo: https://github.com/bridgecrewio/checkov.git
+    rev: '2.3.187' # change to tag or sha
+    hooks:
+      - id: checkov
+        args: [ --external-checks-dir, 'checks', '--soft-fail' ]
